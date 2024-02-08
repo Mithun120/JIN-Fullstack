@@ -1,0 +1,243 @@
+
+
+.MainArea {
+ 
+    width:83vw;
+ 
+    /* position: absolute; */
+ 
+    margin-left: 190px;
+ 
+  }
+  
+  .MainHead {
+ 
+    color: #19105B;
+ 
+  }
+ 
+ 
+  .MainHeadDetails {
+    
+    display: flex;
+ 
+    /* width:88vw; */
+ 
+    flex-direction:row;
+    flex-wrap: stretch;
+    /* justify-content: space-between; */
+ 
+  }
+ 
+ 
+ 
+ 
+  .MainBands {
+ 
+    background-color:#19105B;
+ 
+    width: 100%;
+    height:40px; 
+    margin-bottom: 5px; 
+    color:#fff5f5; 
+    box-sizing: border-box; 
+    border: 1px solid #ccc;
+    display:flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+ 
+ 
+ 
+  .MainTable {
+ 
+    width:100%;
+ 
+  }
+ 
+ 
+ 
+  .TableHead {
+ 
+ 
+    color:rgb(58,8, 105);
+ 
+  }
+ 
+ 
+ 
+  .TableHead
+  > th {
+ 
+    padding: 10px;
+ background-color:#e6ced4;
+    /* color: rgb(58, 8, 105); */
+ 
+  }
+ 
+ 
+ 
+  select {
+ 
+    min-width: 100px;
+ 
+    background-color: #fff5f5;
+ 
+    width: 100%;
+ 
+    font-size:  1rem;
+ 
+    padding:  0.675em 0.6em  0.675em 1em;
+ 
+    border: 1px #caced1;
+ 
+    border-radius:  0.25rem;
+ 
+    color:  #747272;
+ 
+    cursor: pointer;
+ 
+  }
+ 
+ 
+ 
+  .comments {
+ 
+    min-width: 50px;
+ 
+    background-color:  #fff5f5;
+ 
+    width:  10%;
+ 
+    font-size: 1rem;
+ 
+    padding:  0.675em 0.6em 0.675em 1em;
+ 
+    border: 1px #caced1;
+ 
+    border-radius: 0.25rem;
+ 
+    color:  #747272;
+ 
+    cursor:  pointer;
+ 
+  }
+ 
+ 
+ 
+  input {
+ 
+    min-width: 30px;
+ 
+    background-color:  #fff5f5;
+ 
+    width: 10%;
+ 
+    font-size: 1rem;
+ 
+    padding:  0.675em 0.6em 0.675em 1em;
+ 
+    border: 1px #caced1;
+ 
+    border-radius:  0.25rem;
+ 
+    color: #747272;
+ 
+    cursor: pointer;
+ 
+  }
+ 
+ 
+ 
+  .plus {
+ 
+    font-size: 40px;
+ 
+    color: #747272;
+ 
+    cursor:pointer
+  }
+ 
+  .minus {
+ 
+    font-size: 40px;
+ 
+    color: #747272;
+ 
+    cursor:pointer
+
+  }
+ 
+  .projectType {
+ 
+    width: 10%;
+ 
+    color:  #747272;
+ 
+    font-size: 15px;
+ 
+    padding: 10px;
+    font-weight: 500;
+ 
+  }
+ 
+ 
+/*  
+  .MainSubmission {
+ 
+    margin-right: 60px;
+ 
+  }
+  */
+  .MainSubmission > button {
+ 
+    float: right;
+ 
+    margin: 10px;
+ 
+    padding: 10px 20px;
+    border-radius: 5px; 
+    border: none;
+ 
+  }
+ 
+ 
+ 
+  .save {
+ 
+    background-color: rgb(58, 8, 105);
+ 
+    color:   white;
+ 
+    width:   110px;
+    
+ 
+  }
+ 
+ 
+ 
+  .submit {  
+    background-color:   #ff6196;
+ 
+    color:   white;
+ 
+    width:   110px;
+ 
+  }
+  
+  .MainTable tr {
+    margin-bottom: 5px;
+  }
+  
+  .MainTable .firstRow {
+    margin-bottom: 10px; 
+  }
+  .actionButtons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .actionButtons p {
+    margin: 0 5px; /* Adjust the margin as needed */
+  }
+  
