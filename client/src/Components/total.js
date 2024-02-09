@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { GoChevronDown, GoChevronUp, GoArrowRight } from "react-icons/go";
 import "../Styles/MainPage.css";
 
-function Timesheet() {
+function Total() {
   const [down, setDown] = useState(false);
   const [rows, setRows] = useState([
     {
@@ -31,12 +31,13 @@ function Timesheet() {
     const newTotal = newRows[rowIndex].values.reduce((acc, val) => acc + val, 0);
     newRows[rowIndex].total = newTotal;
     setRows(newRows);
+    // console.log("NEW ROWS"+newRows)
   };
 
   return (
     <div className="MainArea">
       <div className="MainHead">
-        <h1>Timesheet</h1>
+        <h1>Total</h1>
         <div className="MainHeadDetails" style={{ gap: "700px" }}>
           <h5>Total hour: 0.0</h5>
           <p>&lt; 29 Jan 2024 - 04 Feb 2024 &gt;</p>
@@ -71,7 +72,7 @@ function Timesheet() {
       )}
 
       <div className="MainBands">
-        <p>Timesheet</p>
+        <p>Total</p>
       </div>
 
       <table className="MainTable">
@@ -95,7 +96,7 @@ function Timesheet() {
         <tbody>
           {rows.map((row, rowIndex) => (
             <tr key={`row_${rowIndex}`}>
-              <td className="projectType">{row.activity} Activity</td>
+              {rowIndex === 0 ? <td className="projectType">{row.activity} Activity</td> : <td></td>}
               <td>
                 <select>
                   <option value="">Project</option>
@@ -139,4 +140,4 @@ function Timesheet() {
   );
 }
 
-export default Timesheet;
+export default Total;
